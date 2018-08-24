@@ -1,0 +1,26 @@
+{"slides": [
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993001R/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993002L/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993002R/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993003L/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993003R/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993004L/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993004R/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993005L/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993005R/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993006L/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993006R/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993007L/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993007R/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993008L/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993008R/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993009L/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993009R/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993010L/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993010R/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993011L/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993011R/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993012L/", "height": 3200, "width": 2300},
+      {"path": "http://www-hki.fitzmuseum.cam.ac.uk/local/images/archives/roberson/tiles/MS867-1993/MS867-1993012R/", "height": 3200, "width": 2300}
+    ]
+}

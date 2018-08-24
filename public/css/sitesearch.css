@@ -1,0 +1,17 @@
+/* Navigation menu (previous/current/next) */
+ul.navigationmenu {clear: right; margin: 0; text-align: right; float: right; padding-top: 0; border-bottom: 1px solid #eee; padding-left: 0; padding-right: 0.8em;}
+ul.navigationmenu li {display: inline; text-align: right; float: left; margin-left: 0.5em; width: 2.7em; padding-bottom: 1px;}
+ul.navigationmenu li.root {margin-left: 0.8em; text-align: center; width: 14em;}
+ul.navigationmenu a {border: 1px solid white; padding: 0.1em 0.5em;}
+ul.navigationmenu a:hover {/*border: 1px solid #ddd;*/}
+ul.navigationmenu a img {display:inline;}
+ul.navigationmenu li.root a {width: 13em; display: block;}
+
+/* Search results */
+.search #searchform form {margin-top: 2em;}
+.search ul.navigationmenu img, .search ul.navigationmenu a {border: 0; margin: 0; padding: 0;}
+.search ul.navigationmenu img {vertical-align: middle;}
+.search ul.navigationmenu li.previous {text-align: right; width: 20px;}
+.search ul.navigationmenu li.next {text-align: left; width: 20px;}
+.search ul.navigationmenu li.current {width: 60px; text-align: center;}
+.search dl dd.attributes {font-size: 0.83em; padding: 0; margin-top: 3px;}

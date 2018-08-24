@@ -1,0 +1,16 @@
+div.news {
+	/*background-image: url('/local/images/news/news.png');*/
+	background-repeat: no-repeat;
+	padding-left: 52px
+	}
+div.events {
+	/*background-image: url('/local/images/news/presentation_chart.gif');*/
+	background-repeat: no-repeat;
+	padding-left: 52px
+	}
+div.research {
+	/*background-image: url('/local/images/news/research.gif');*/
+	background-repeat: no-repeat;
+	padding-left: 52px;
+	background-position: 0px 3em;
+	}

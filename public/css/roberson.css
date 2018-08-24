@@ -1,0 +1,85 @@
+/*Styles for Robseron archive concept page*/
+/*Default style for SPAN icons. Edit if desired: */
+	
+	.iconspan{
+		float: right;
+		margin: 3px;
+		cursor:hand;
+		cursor:pointer;
+		font-weight: bold;
+		
+	font-size: 0.75em;
+		}
+
+	/*CSS used to style the examples. Remove if desired: */
+	.eg-bar, .eg-bar2{
+		background: #006a71;
+		color: white;
+		border: 1px solid #CCC;
+		padding: 3px;
+		margin-right:3px;
+		}
+		
+	/*div.eg-bar{
+		width: 95%;
+		}
+*/	
+	div.eg-bar2{
+		width: 589px;
+		float:right;
+		}
+		
+	.eg-bar, #faq1, #faq2, #info {
+		width:330px;
+		float:right;
+		}
+
+	#faq1, #faq2, #info {
+		margin-right:3px;
+		}
+		
+	.icongroup1, .icongroup2{
+		/*width: 95%;*/
+		border: 1px solid #CCC;
+		border-width: 0 1px 1px 1px;
+		padding: 3px;
+		}
+	
+	div.clear {
+		clear: both;
+		}
+		
+	div#zholder {
+		width:940px;
+		float:right;
+		}
+		
+	div.viewer {
+		/*float:left;*/
+		border: none;
+		/*width:66%;*/
+		}
+		
+	div.column1 {
+		float: left;
+		width: 330px;
+		}
+	
+	div.infopanel{display:none;}
+	a.blue {color:#441199;}
+	a.green {color:green; padding-left:0.5em;}
+	a.orange {color:#bb5c00;}
+	
+	p.header {
+		border-top: none;
+		padding: 0.6em 20px 0.45em 10px;
+		background: #006a71;
+		color: white;
+	}
+	span.title {
+	border-top: none;
+	/*font-weight: bold;*/
+	padding: 0.6em 20px 0.45em 10px;
+	color: white;
+	font-size: 0.75em;
+	}

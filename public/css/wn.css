@@ -1,0 +1,181 @@
+/*	Styles for Winsor & Newton archive pages*/
+/*  keep page size for search form 
+div#container {min-width:58em;}*/
+
+/*	general pages*/
+body {
+	background: #003366 /*09165f*/;
+	}
+	
+.wn div#header {
+	/*border-bottom: 3px solid #006;*/
+	height:105px; /*allows for blue painted bar*/
+	}
+
+ul#site-info {
+	border-top: 2px solid #006;
+	}
+div#wn {
+	background-image: url(/images/archives/wn/finderbarbackground.gif);
+	height:34px; 
+	clear:both;
+	}
+	
+.wn p.section {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	}
+/*.wn ul#nav-primary {
+	width:25%;
+	}*/
+	
+.wn ul#nav-primary li.title { 
+	background: none;
+	text-align:center;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	/*font-size:115%;*/
+	color:#1A171B;
+	padding:0.6em 0 0.45em 0;
+	}
+.wn ul#nav-primary li.title  img{ 	
+	display:inline;
+	vertical-align:-200%;
+	}
+.wn ul#nav-primary li.title a{ 
+	border-top:none;
+	}
+.wn p.centred {
+	text-align:center;
+	margin: auto;
+	width:400px;
+	}
+.wn div#content-primary p.centred img.logo {
+	/*float:left;*/
+	padding-left:20px;
+	vertical-align:text-bottom;
+	float:none;
+	border:none;
+	}
+/*div#content-secondary dl.links dd a {
+	background: transparent 
+	}
+div#content-secondary dl.links dd a:hover {
+	color: #CC6600; background: transparent 
+	}
+div#content-secondary dl.links dd.active a {
+	color: #CC6600; font-weight:bold; 
+	background: transparent url(/global/images/icon-arrow-nav-primary.gif) no-repeat scroll 20px 10.5px
+	}
+div#content img.logo {
+	float:right; padding-left:20px; 
+	vertical-align: baseline; 
+	border:none; 
+	clear:none
+	}
+div#content.secondary {
+	width:30%;
+	}*/
+/*	Search Form*/
+ol#tabs {
+    height: 2em;
+    list-style: none;
+    
+    margin: 2em 0 0 0;
+    padding: 0;
+}
+
+ol#tabs li {
+    float: left;
+    margin: 0 1px 0 0;
+}
+
+ol#tabs a {
+    background: #bdf url(/local/images/archives/wn/tab.gif);
+    color: #fff;
+    display: block;
+    float: left;
+    height: 2em;
+    padding-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ol#tabs a:hover {
+    background-color: #06c;
+    background-position: 0 -120px;
+    text-decoration: none;
+}
+
+ol#tabs a:hover span {
+    background-position: 100% -120px;
+}
+
+ol#tabs li.current a {
+    background-color: #036;
+    background-position: 0 -60px;
+    color: #fff;
+    font-weight: bold;
+	text-decoration: none;
+}
+
+ol#tabs li.current span {
+    background-position: 100% -60px;
+}
+
+ol#tabs span {
+    background: url(/local/images/archives/wn/tab.gif) 100% 0;
+    display: block;
+    line-height: 2em;
+    padding-right: 10px;
+}
+
+div.tabscontent {
+    border: #003366 solid 2px;
+	border-top: #003366 solid 25px;
+    clear: left;
+    padding: 0.5em;
+	background: #f1f5ff;
+	height: 16em;
+}
+div.tabscontent span.col1, span.col2, span.col3 {
+	vertical-align: top;
+	}
+div.tabscontent span.col1  {
+	display:block;
+	width:6.5em;  
+	float:left;
+	}
+div.tabscontent span.col2, div.tabscontent span.col3 {
+	margin-left:1.1em;
+	}
+div.tabscontent p.centred {
+	text-align:center;
+    line-height: 2em;
+	margin-bottom:1.7em;
+	}
+	
+/* definitions below search form*/
+/*div.listrow p {line-height:;}*/
+div.listrow  div.label p {font-weight:bold;clear:left;float:left;width:200px;line-height:1.2em;margin:0;padding:0;}
+div.listrow  div.text p {float:left;clear:right;width:480px;line-height:1.2em;margin-top:0.3em;padding:0;}
+div.centerlist {width:680px;margin:auto;padding-top:1em;}
+
+/* columns layout for browse page */
+#centred {margin: 0 auto; text-align: center;}
+#browsecontainer {margin: 0 auto; text-align: center;}
+div.col {width: 18%; float: left; text-align: left; padding: 0 1em 2em 0;font-size:0.75em;;}
+div.book {padding:1em; float: left;} 
+div.book p {margin: 0 auto; text-align: center;}
+div.book p a img {border:none;}
+.book a:hover {text-decoration: none; margin: 0 auto;}
+
+/* layout for application Application form */
+div.appncontainer {clear: both;  background: #f1f5ff;  padding-top: 2em;  width: 45em;   padding: 5px;  margin: 20px auto;  min-height: 42em; border:solid #003366 2px; font-size:0.75em;}
+div.appnrow {clear: both;  padding-top: 10px;}
+div.appnrow span.label {float: left;  width: 8em;  text-align: right;}
+div.appnrow span.form {float: left;  width: 25em;  text-align: left;padding-left:2em;} 
+div.appnrow span.button {float: right;  text-align: right;  width: 25em;  padding-right: 10px;}
+
+ul.pagination li {
+	display: inline;
+}
+
