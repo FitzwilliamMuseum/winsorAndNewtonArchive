@@ -38,6 +38,7 @@ class SearchController extends BaseController
         $this->client = new Client($configSolr);
         $query = $this->client->createSelect();
         $query->setQuery($request->get('query'));
+        $query->setQueryDefaultOperator('AND');
         $queryString = $request->get('query');
         $from = ($request->get('page', 1) - 1) * $perPage;
         $query->setStart($from);

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4ebe0d922c86badbb62041e2226cb22",
+    "content-hash": "558e8400e9ba6876241f569fda922f6a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -118,48 +118,6 @@
                 "laravel"
             ],
             "time": "2018-01-04T06:59:27+00:00"
-        },
-        {
-            "name": "components/jquery",
-            "version": "3.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/components/jquery.git",
-                "reference": "459648cda77875519c5da3ae1dd0ed5d170aa649"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/components/jquery/zipball/459648cda77875519c5da3ae1dd0ed5d170aa649",
-                "reference": "459648cda77875519c5da3ae1dd0ed5d170aa649",
-                "shasum": ""
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "jquery.js"
-                    ],
-                    "files": [
-                        "jquery.min.js",
-                        "jquery.min.map",
-                        "jquery.slim.js",
-                        "jquery.slim.min.js",
-                        "jquery.slim.min.map"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "JS Foundation and other contributors"
-                }
-            ],
-            "description": "jQuery JavaScript Library",
-            "homepage": "http://jquery.com",
-            "time": "2018-03-04T13:23:48+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -654,68 +612,6 @@
                 }
             ],
             "time": "2015-04-20T18:58:01+00:00"
-        },
-        {
-            "name": "kris/laravel-form-builder",
-            "version": "1.15.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kristijanhusak/laravel-form-builder.git",
-                "reference": "5bb1766e90151b67e8c0a07a3492781ed801caf8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kristijanhusak/laravel-form-builder/zipball/5bb1766e90151b67e8c0a07a3492781ed801caf8",
-                "reference": "5bb1766e90151b67e8c0a07a3492781ed801caf8",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/database": "5.*@dev",
-                "illuminate/validation": "5.*@dev",
-                "laravelcollective/html": "5.*",
-                "php": ">=5.6.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "~3.4",
-                "phpunit/phpunit": "~5.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.16.x-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Kris\\LaravelFormBuilder\\FormBuilderServiceProvider"
-                    ],
-                    "aliases": {
-                        "FormBuilder": "Kris\\LaravelFormBuilder\\Facades\\FormBuilder"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Kris\\LaravelFormBuilder": "src/"
-                },
-                "classmap": [
-                    "tests/FormBuilderTestCase.php"
-                ],
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kristijan Husak",
-                    "email": "husakkristijan@gmail.com"
-                }
-            ],
-            "description": "Laravel form builder - symfony like",
-            "time": "2018-07-11T10:44:40+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1276,45 +1172,6 @@
                 "time"
             ],
             "time": "2018-03-19T15:50:49+00:00"
-        },
-        {
-            "name": "nicolafranchini/venobox",
-            "version": "1.8.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nicolafranchini/VenoBox.git",
-                "reference": "eed3be789529ea82708ff56da17473eefe81013c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nicolafranchini/VenoBox/zipball/eed3be789529ea82708ff56da17473eefe81013c",
-                "reference": "eed3be789529ea82708ff56da17473eefe81013c",
-                "shasum": ""
-            },
-            "require": {
-                "components/jquery": ">=1.7.0"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicola Franchini",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Responsive jQuery modal window plugin",
-            "keywords": [
-                "jquery",
-                "jquery-plugin",
-                "lightbox",
-                "modal",
-                "popup",
-                "responsive"
-            ],
-            "time": "2018-08-18T12:22:10+00:00"
         },
         {
             "name": "nikic/php-parser",

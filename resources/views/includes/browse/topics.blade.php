@@ -3,7 +3,7 @@
 <p>
     @foreach($data as $document)
         @foreach($document['docs'] as $doc)
-            <a href="/">{!! ucfirst(trans($doc['title'][0])) !!}</a> <br />
+            <a href="/search/results?query=topic_sum:{!! ucfirst(trans($doc['title'][0])) !!}">{!! ucfirst(trans($doc['title'][0])) !!}</a> <br />
         @endforeach
     @endforeach
 </p>

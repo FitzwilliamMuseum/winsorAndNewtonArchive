@@ -57,7 +57,7 @@ Route::get('/search', [
     'as' => 'pages.search'
 ]);
 
-Route::get('search/results', [
+Route::match(array('GET', 'POST'), 'search/results', [
     'uses' => 'SearchController@results',
     'as' => 'pages.results'
 ]);

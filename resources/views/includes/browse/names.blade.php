@@ -7,7 +7,7 @@
 <p>
     @foreach($data as $document)
         @foreach($document['docs'] as $doc)
-            <a href="/search/results?named_individuals_sum:'$doc['title'][0]'">{!! ucfirst(trans($doc['title'][0])) !!}</a> <br />
+            <a href="/search/results?query={!! ucfirst(trans($doc['title'][0])) !!}">{!! ucfirst(trans($doc['title'][0])) !!}</a> <br />
         @endforeach
     @endforeach
 </p>

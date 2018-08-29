@@ -159,10 +159,6 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        /*
-         * Added Form builder
-         */
-        Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
 
         /*
          * Added Solarium
@@ -223,10 +219,6 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        /*
-         * Added form builder
-         */
-        'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
 
         /*
          * Added HTML collective
