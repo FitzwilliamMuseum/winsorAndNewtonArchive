@@ -1,8 +1,12 @@
 @extends('layouts.app')
+
 @section('pageTitle')
-    Winsor &amp; Newton Archive of 19<sup>th</sup> Century Artists’ materials</p>
+    Winsor & Newton Archive of 19<sup>th</sup> Century Artists’ materials
 @endsection
 
+@section('title', 'Winsor & Newton Archive of 19th Century Artists’ materials')
+
+@section('keywords','recipe,details,winsor,newton')
 @section('content')
     <div id="content-primary">
 
@@ -10,6 +14,7 @@
 
         @foreach($data as $document)
             @foreach($document['docs'] as $recipe)
+
                 <table class="data">
                     <tr>
                         <td class="topic">Original Recipe Name</td>
@@ -90,18 +95,19 @@
                     </tr>
 
                     @if(array_key_exists('unique_recipe_code', $recipe))
-                        <?php $file = '/assets/' .$recipe['source_book'][0] . '/' . $recipe['unique_recipe_code'][0] .'.jpg';?>
-                        @if(file_exists($file))
+                        <?php
+                        $file = '/assets/' . $recipe['source_book'][0] . '/' . substr($recipe['unique_recipe_code'][0], 0, -3) . '.jpg';
+                        ?>
+                        @if(file_exists(public_path() .$file))
                             <tr>
-                                <td colspan="2"><a
-                                            href="/assets/{!! $recipe['source_book'][0] !!}/{!! $recipe['unique_recipe_code'][0] !!}.jpg">
-                                        <img src="/assets/{!! $recipe['source_book'][0] !!}/{!! $recipe['unique_recipe_code'][0] !!}.jpg"
-                                             width="700"/></a>
+                                <td colspan="2"><a data-featherlight="image" href="<?php echo $file;?>"><img
+                                                src="<?php echo $file;?>" width="100%"/></a>
                                 </td>
                             </tr>
+
                         @endif
                     @endif
-
+                    @section('description')Details for recipe {!! $recipe['recipe_name_original'][0] !!}@endsection
                 </table>
             @endforeach
         @endforeach

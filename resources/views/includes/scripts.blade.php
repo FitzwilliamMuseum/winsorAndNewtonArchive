@@ -13,6 +13,10 @@
         });
     });
 </script>
+<!-- Lightbox -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript"
+        charset="utf-8"></script>
+
 <!-- Cookie Consent by https://PrivacyPolicies.com -->
 <script type="text/javascript" src="//PrivacyPolicies.com/cookie-consent/releases/2.0.0/cookie-consent.js"></script>
 <script type="text/javascript">

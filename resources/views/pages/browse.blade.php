@@ -1,11 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: danielpett
- * Date: 22/08/2018
- * Time: 09:34
- */
-?>
 @extends('layouts.app')
 @section('title','Winsor &amp; Newton Archive of 19<sup>th</sup> Century Artists’ materials')
 @section('keywords', 'Conservation, archives, technical art history, Hamilton Kerr Institute, Winsor &amp; Newton')

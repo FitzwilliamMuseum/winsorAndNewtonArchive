@@ -15,11 +15,16 @@
 
     @include('includes.meta')
 
-    <!-- CSS links -->
+            <!-- CSS links -->
     <link rel="stylesheet" href="{{ URL::to('/css/layout.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ URL::to('/css/links.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ URL::to('/css/wn.css') }}" type="text/css" media="all"/>
     <link rel="stylesheet" href="{{ URL::to('/css/print.css') }}" type="text/css" media="print"/>
+
+    <!-- Lightbox -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css"
+          rel="stylesheet"/>
+
     <!-- End of css links -->
 
 </head>
@@ -65,7 +70,8 @@
     <!-- end contents -->
     <ul id="site-info">
         <li class="copy">&copy;&nbsp;2016 - 2018 Hamilton Kerr Institute, University of Cambridge, CB22 4NE<br/>
-            Information provided by <a href="mailto:webmaster@hki.fitzmuseum.cam.ac.uk">webmaster@hki.fitzmuseum.cam.ac.uk</a>.
+            Information provided by <a href="mailto:webmaster@hki.fitzmuseum.cam.ac.uk">webmaster@hki
+                .fitzmuseum.cam.ac.uk</a>.
         </li>
         <li class="link last"><a href="http://www.fitzmuseum.cam.ac.uk/website/cookiepolicy">Privacy</a></li>
     </ul>
@@ -73,6 +79,6 @@
 <!-- end container -->
 <!-- Add javascript -->
 @include('includes.scripts')
-<!-- End javascript') -->
+        <!-- End javascript') -->
 </body>
 </html>
