@@ -5,14 +5,37 @@ The original site was written in an old PHP version and was reported as XSS comp
 transferred the original look of the website into a more modern version with SOLR as a search index rather than a MySQL 
 full text search. No cosmetic changes have been made and it remains non-mobile friendly at the moment.
  
-* It is not intended that this is developed further in this format * 
+** It is not intended that this is developed further in this format ** 
 
 This assumes that you will be installing onto an Ubuntu VM with LTS (16.04 or 18.04)
 
 To install basic code base:
 
-    git clone https://github.com/FitzwilliamMuseum/winsorAndNewtonArchive /var/www/winsor
+    cd /var/www/
+    git clone https://github.com/FitzwilliamMuseum/winsorAndNewtonArchive
     composer install
+    
+The vhosts config file will then need editing:
+
+    sudo nano /etc/apache2/sites-available/{hostName}
+
+Enter the following for http:
+
+    <VirtualHost *:80>
+        DocumentRoot "/var/www/winsorAndNewtonArchive/public"
+        ServerName {domain name}
+        <Directory "/var/www/winsorAndNewtonArchive/public">
+                AllowOverride All
+                Options +FollowSymLinks +Indexes
+                Order allow,deny
+                Allow from all
+        </Directory>
+    </VirtualHost>
+    
+Restart apache2:
+
+    sudo service apache2 restart
+    
     
 ## Search index installation
 
@@ -62,8 +85,8 @@ To check if solr is running
     
 Now import the data to system from the csv files associated.
 
-    /opt/solr/bin/post -c winsor /Users/danielpett/Downloads/data_7.csv
-    /opt/solrbin/post -c winsor /Users/danielpett/Downloads/data_7.csv
+    /opt/solr/bin/post -c winsor /home/data/data_7.csv
+    /opt/solrbin/post -c winsorSearches /home/data/searches.csv
     
 To stop and start solr
 
