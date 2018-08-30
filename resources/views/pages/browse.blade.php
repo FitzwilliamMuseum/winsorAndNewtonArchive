@@ -29,9 +29,9 @@
 
         <div id="centred">
             <p>Browse by:
-                <a href="/browse/by/materials">Materials</a> | <a href="/browse/by/names">Names</a> | <a
-                        href="/browse/by/pigments">Pigments</a> | <a href="/browse/by/topics">Topics</a> |
-                <a href="/browse/by/books">Books</a></p>
+                <a href="/search/browse/by/materials">Materials</a> | <a href="/search/browse/by/names">Names</a> | <a
+                        href="/search/browse/by/pigments">Pigments</a> | <a href="/search/browse/by/topics">Topics</a> |
+                <a href="/search/browse/by/books">Books</a></p>
         </div>
         <div class="spacer">&nbsp;</div>
     </div>

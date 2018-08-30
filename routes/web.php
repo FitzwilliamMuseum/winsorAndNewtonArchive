@@ -79,7 +79,7 @@ Route::get('/detail/{urc}', [
  * Route for various browse facets
  */
 
-Route::get('/browse/by/{querystring}', [
+Route::get('/search/browse/by/{querystring}', [
     'uses' => 'BrowseController@solr',
     'as' => 'pages.browsed'
 ]);

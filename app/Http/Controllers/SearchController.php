@@ -2,14 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Routing\Controller as BaseController;
-use Solarium\Core\Client\Client;
-use Illuminate\Http\Request;
-use Illuminate\Pagination\LengthAwarePaginator;
 
-class SearchController extends BaseController
+use Solarium\Core\Client\Client;
+use Solarium\Exception;
+use Illuminate\Http\Request;
+
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Facades\Cache;
+use Mews\Purifier;
+
+
+
+class SearchController extends Controller
 {
 
+    /**
+     * @var \Solarium\Client
+     */
     protected $client;
 
     public function __construct(\Solarium\Client $client)
@@ -26,33 +35,47 @@ class SearchController extends BaseController
         return view('pages.search');
     }
 
-    /**
+    /** Get results for search
      *
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function results(Request $request)
     {
 
-        // Define how many items we want to be visible in each page
+        $this->validate($request, [
+            'query' => 'required|max:200|min:3',
+        ]);
+
+        $queryString = \Purifier::clean($request->get('query'), array('HTML.Allowed' => ''));
+        $key = md5($queryString . $request->get('page'));
         $perPage = 20;
-        $configSolr = \Config::get('solarium');
-        $this->client = new Client($configSolr);
-        $query = $this->client->createSelect();
-        $query->setQuery($request->get('query'));
-        $query->setQueryDefaultOperator('AND');
-        $queryString = $request->get('query');
+        $expiresAt = now()->addMinutes(3600);
         $from = ($request->get('page', 1) - 1) * $perPage;
-        $query->setStart($from);
-        $query->setRows($perPage);
-        $data  = $this->client->select($query);
+        if (Cache::has($key)) {
+            $data = Cache::store('file')->get($key);
+        } else {
+            $configSolr = \Config::get('solarium');
+            $this->client = new Client($configSolr);
+            $query = $this->client->createSelect();
+            $query->setQuery($queryString);
+            $query->setQueryDefaultOperator('AND');
+            $query->setStart($from);
+            $query->setRows($perPage);
+            $data = $this->client->select($query);
+            Cache::store('file')->put($key, $data, $expiresAt);
+        }
         $number = $data->getNumFound();
         $records = $data->getDocuments();
         $paginate = new LengthAwarePaginator($records, $number, $perPage);
-        $paginate->setPath($request->fullUrl());
+        $paginate->setPath($request->getBaseUrl() . '?query='. $queryString);
         return view('pages.results', compact('records', 'number', 'paginate', 'queryString'));
     }
 
 
-
+    /** Ping function for search
+     * @return \Illuminate\Http\JsonResponse
+     */
 
     public function ping()
     {
@@ -63,7 +86,7 @@ class SearchController extends BaseController
         try {
             $this->client->ping($ping);
             return response()->json('OK');
-        } catch (\Solarium\Exception $e) {
+        } catch (\Exception $e) {
             return response()->json('ERROR', 500);
         }
     }

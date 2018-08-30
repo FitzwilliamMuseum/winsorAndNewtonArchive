@@ -14,8 +14,13 @@
     <div id="content-primary">
         <h2>Results Summary</h2>
 
-        <p>Your search for <strong>{{ $queryString }}</strong> returned <strong>{{ $number }}</strong> results.</p>
+        <p>
+            Your search for <strong>{{ $queryString }}</strong> returned <strong>{{ $number }}</strong> results.
+        </p>
 
+        <p>
+            <a href="{{ URL::to('/search/results?query=')}}{{ $queryString }}">Shareable link for results.</a>
+        </p>
 
         @if(!empty($records))
         <div id="browsecontainer">
@@ -41,7 +46,7 @@
                             <td>{{ $result['subtopic_sum'][0] }}</td>
                             <td>{{ $result['named_individuals_sum'][0] }}</td>
                             <td>{{ $result['date_of_recipe_YEAR'][0]  }}</td>
-                            <td><a href="/detail/{{ $result['unique_recipe_code'][0] }}">{{ $result['unique_recipe_code'][0] }}</a></td>
+                            <td><a href="{{ URL::to('/detail')}}/{{ $result['unique_recipe_code'][0] }}">{{ $result['unique_recipe_code'][0] }}</a></td>
                         </tr>
                 @endforeach
             </table>

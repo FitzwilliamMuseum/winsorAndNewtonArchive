@@ -25,7 +25,9 @@ div#banner,
 dl.news img,
 ul#nav-tabbed, 
 a#bookmarks,
-ul#site-info li.link, div#site-info li.last {
+ul#site-info li.link,
+div#site-info li.last,
+button#feedback-form {
 display: none;
 }
 

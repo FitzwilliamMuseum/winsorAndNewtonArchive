@@ -32,7 +32,7 @@
             gout and toothache), household recipes, notes on suppliers and customers, travel and hotel suggestions,
             notes on buildings and services, and on staff.</p>
 
-        <p>This material is available as a database (<a href="database">see The Database link</a>) which consists of a
+        <p>This material is available as a database (<a href="/database">see The Database link</a>) which consists of a
             series of photographs of individual pages of each of the manuscripts, and a related database that indexes
             these images in considerable detail (by key words, materials, named individuals etc.) This approach combines
             considerable flexibility and convenience in locating relevant material, together with the advantages of
@@ -52,9 +52,9 @@
             contemporary recipes for this material, some of which have been discovered for the first time in the Winsor
             &amp; Newton archive.</p>
 
-        <p>See <a href="database#example">example recipes</a> with <a href="database#ss">records</a> from the database
-            and the <a href="database#page-images">example page images</a>. The database may be consulted after <a
-                    href="application">applying for access</a>. A limited <a href="search">index of material</a>
+        <p>See <a href="/database#example">example recipes</a> with <a href="/database#ss">records</a> from the database
+            and the <a href="/database#page-images">example page images</a>. The database may be consulted after <a
+                    href="/application">applying for access</a>. A limited <a href="/search">index of material</a>
             is provided to indicate the content available in the database.
     </div>
 @endsection

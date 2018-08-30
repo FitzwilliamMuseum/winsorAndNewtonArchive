@@ -4,19 +4,22 @@
 <head>
     <!-- Base meta tags -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="Shortcut Icon" href="{{ URL::to('/') }}/favicon.ico"/>
+    <link rel="Shortcut Icon" href="{{ URL::to('/favicon.ico') }}"/>
     <title>@yield('title', 'The Fitzwilliam Museum: Winsor and Newton Archive')</title>
     <meta name="description" content="@yield('description')"/>
     <meta name="keywords" content="@yield('keywords')"/>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- end of base meta tags -->
 
     @include('includes.meta')
 
     <!-- CSS links -->
-    <link rel="stylesheet" href="{{ URL::to('/') }}/css/layout.css" type="text/css" media="all"/>
-    <link rel="stylesheet" href="{{ URL::to('/') }}/css/links.css" type="text/css" media="all"/>
-    <link rel="stylesheet" href="{{ URL::to('/') }}/css/wn.css" type="text/css" media="all"/>
-    <link rel="stylesheet" href="{{ URL::to('/') }}/css/print.css" type="text/css" media="print"/>
+    <link rel="stylesheet" href="{{ URL::to('/css/layout.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ URL::to('/css/links.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ URL::to('/css/wn.css') }}" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ URL::to('/css/print.css') }}" type="text/css" media="print"/>
     <!-- End of css links -->
 
 </head>
@@ -29,10 +32,10 @@
 
 <div id="header">
 
-    <div id="branding"><a href="http://www.cam.ac.uk/" accesskey="1"><img src="{{ URL::to('/') }}/images/identifier.gif"
+    <div id="branding"><a href="http://www.cam.ac.uk/" accesskey="1"><img src="{{ URL::to('/images/identifier.gif') }}"
                                                                           alt="University of Cambridge"
                                                                           class="ucam"/></a><a
-                href="http://www.winsornewton.com"><img src="{{ URL::to('/') }}/images/archives/wn/WN-logo.png"
+                href="http://www.winsornewton.com"><img src="{{ URL::to('/images/archives/wn/WN-logo.png') }}"
                                                         alt="Winsor &amp; Newton"/></a>
     </div>
 
@@ -45,8 +48,7 @@
         <li class="last"><a href="http://www.hki.fitzmuseum.cam.ac.uk/archives">Archives</a></li>
     </ul>
     <ul id="nav-primary">
-        <li class="title"><img src="{{ URL::to('/') }}/images/archives/wn/WN-projectlogo.gif"
-                               alt="Winsor &amp; Newton"/><br/>Winsor &amp; Newton Archive &nbsp;</li>
+        <li class="title">Winsor &amp; Newton Archive &nbsp;</li>
         <li><a href="http://www.hki.fitzmuseum.cam.ac.uk">Hamilton Kerr Institute</a></li>
 
         @include('includes.menus')
@@ -58,6 +60,7 @@
             <p class="section">@section('pageTitle')@show</p>
         </div>
         @yield('content')
+        <button id="feedback-form">Feedback</button>
     </div>
     <!-- end contents -->
     <ul id="site-info">
