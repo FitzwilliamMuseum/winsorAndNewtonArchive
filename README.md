@@ -14,6 +14,16 @@ To install basic code base:
     cd /var/www/
     git clone https://github.com/FitzwilliamMuseum/winsorAndNewtonArchive
     composer install
+
+Create an env file
+
+    cp .env.example .env
+    php artisan key:generate
+    
+Check your env file has all you need in it:
+    
+    nano .env     
+
     
 The vhosts config file will then need editing:
 
@@ -35,7 +45,12 @@ Enter the following for http:
 Restart apache2:
 
     sudo service apache2 restart
-    
+  
+## Pull in images
+
+The images for this site are held in a separate repository that is included as a submodule.
+
+    git submodule update --init --recursive
     
 ## Search index installation
 
