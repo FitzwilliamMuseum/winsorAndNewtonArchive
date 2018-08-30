@@ -1,6 +1,0 @@
-[submodule "public/assets"]
-	path = public/assets
-	url = https://github.com/FitzwilliamMuseum/winsorAndNewtonArchiveImages.git
-[submodule "public/public/assets"]
-	path = public/public/assets
-	url = https://github.com/FitzwilliamMuseum/winsorAndNewtonArchiveImages.git
