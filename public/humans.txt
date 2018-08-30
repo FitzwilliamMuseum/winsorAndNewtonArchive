@@ -1,0 +1,15 @@
+/* TEAM */
+
+Your title: Daniel Pett
+Site: https://github.com/fitzwilliammuseum
+Twitter: @dejpett
+Location: Cambridge, United Kingdom.
+
+/* THANKS */
+Name: HKI & Fitzwilliam Museum Staff
+
+/* SITE */
+Last update: 2018/08/30
+Standards: HTML5, CSS3
+Components: Laravel 5.6, jQuery,
+Software: PhpStorm
