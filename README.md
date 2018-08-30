@@ -39,16 +39,18 @@ Change to sudo user:
     
     sudo su - 
     
-From here on assume you will be as sudo user:
-
-    solr -c "/opt/solr/bin/solr create -c winsor -n data_driven_schema_configs"
-    solr -c "/opt/solr/bin/solr create -c winsorSearches -n data_driven_schema_configs"
+From here on assume you will be as sudo to solr user:
+ 
+    sudo su - solr -c "/opt/solr/bin/solr create -c winsor -n data_driven_schema_configs"
+    sudo su - solr -c "/opt/solr/bin/solr create -c winsorSearches -n data_driven_schema_configs"
 
 Now set up your config for these cores.
 
     git clone https://github.com/FitzwilliamMuseum/winsorAndNewtonArchiveSolr
     mv winsorAndNewtonArchiveSolr/winsor/conf winsor/
     mv winsorAndNewtonArchiveSolr/winsorSearches/conf winsorSearches/
+    mv winsorAndNewtonArchiveSolr/rawdata /home/data
+    rm -r winsorAndNewtonArchiveSolr/
     
 Restart solr
 
@@ -57,6 +59,11 @@ Restart solr
 To check if solr is running
 
     service solr status
+    
+Now import the data to system from the csv files associated.
+
+    /opt/solr/bin/post -c winsor /Users/danielpett/Downloads/data_7.csv
+    /opt/solrbin/post -c winsor /Users/danielpett/Downloads/data_7.csv
     
 To stop and start solr
 
