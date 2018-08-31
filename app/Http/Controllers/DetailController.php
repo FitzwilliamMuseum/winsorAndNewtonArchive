@@ -31,7 +31,7 @@ class DetailController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function record(Request $request, $urc) {
-        $key = md5($urc);
+        $key = md5($urc . 'details');
         $expiresAt = now()->addMinutes(3600);
 
         if (Cache::has($key)) {

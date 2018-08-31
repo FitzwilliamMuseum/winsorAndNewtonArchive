@@ -9,7 +9,13 @@
 @section('keywords','recipe,details,winsor,newton')
 @foreach($data as $document)
     @foreach($document['docs'] as $recipe)
-        @section('description')Details for recipe {!! $recipe['recipe_name_original'][0] !!}@endsection
+        @section('description')
+            @if(array_key_exists('recipe_name_original', $recipe))
+                Details for recipe {!! $recipe['recipe_name_original'][0] !!}
+            @else
+                Details for recipe {!! $recipe['unique_recipe_code'][0] !!}
+            @endif
+        @endsection
     @endforeach
 @endforeach
 
@@ -55,6 +61,7 @@
                         @if(array_key_exists('subtopic_sum', $recipe))
                             <td class="detail">{!! $recipe['subtopic_sum'][0] !!}</td>
                         @else
+
                             <td class="detail">None listed</td>
                         @endif
                     </tr>
