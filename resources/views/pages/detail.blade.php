@@ -55,7 +55,7 @@
                         @if(array_key_exists('subtopic_sum', $recipe))
                             <td class="detail">{!! $recipe['subtopic_sum'][0] !!}</td>
                         @else
-                            <td class="detail"></td>
+                            <td class="detail">None listed</td>
                         @endif
                     </tr>
                     <tr>
