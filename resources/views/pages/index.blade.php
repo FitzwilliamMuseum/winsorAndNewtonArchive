@@ -2,9 +2,9 @@
 
 @section('keywords','Conservation, archives, technical art history, Hamilton Kerr Institute, Winsor &amp; Newton, search results')
 
-@section('title', 'Winsor &amp; Newton Archive of 19<sup>th</sup> Century Artists’ materials')
+@section('title', 'Winsor & Newton Archive of 19th Century Artists’ materials')
 
-@section('description','Winsor &amp; Newton archive project')
+@section('description','Winsor & Newton archive project')
 
 @section('pageTitle')
 Winsor &amp; Newton Archive of 19<sup>th</sup> Century Artists’ materials
