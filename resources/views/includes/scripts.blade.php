@@ -1,5 +1,6 @@
 {{--<script src="{{ asset('js/app.js') }}" defer></script>--}}
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="{{ URL::to('/js/analytics.js') }}"></script>
 
 <script id="zammad_form_script" src="https://helpdesk.fitzmuseum.cam.ac.uk/assets/form/form.js"></script>
 
@@ -13,6 +14,10 @@
         });
     });
 </script>
+<!-- Lightbox -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript"
+        charset="utf-8"></script>
+
 <!-- Cookie Consent by https://PrivacyPolicies.com -->
 <script type="text/javascript" src="//PrivacyPolicies.com/cookie-consent/releases/2.0.0/cookie-consent.js"></script>
 <script type="text/javascript">

@@ -1,5 +1,9 @@
 # The Hamilton Kerr Institute Winsor and Newton Archive
 
+[![DOI](https://zenodo.org/badge/146007464.svg)](https://zenodo.org/badge/latestdoi/146007464)
+[![ORCiD](https://img.shields.io/badge/ORCiD-0000--0002--0246--2335-green.svg)](http://orcid.org/0000-0002-0246-2335)
+
+
 This repository contains a Laravel 5.6 port of the Winsor and Newton Archive for the . 
 The original site was written in an old PHP version and was reported as XSS compromised. This port of the code has 
 transferred the original look of the website into a more modern version with SOLR as a search index rather than a MySQL 
@@ -14,6 +18,16 @@ To install basic code base:
     cd /var/www/
     git clone https://github.com/FitzwilliamMuseum/winsorAndNewtonArchive
     composer install
+
+Create an env file
+
+    cp .env.example .env
+    php artisan key:generate
+    
+Check your env file has all you need in it:
+    
+    nano .env     
+
     
 The vhosts config file will then need editing:
 
@@ -35,7 +49,12 @@ Enter the following for http:
 Restart apache2:
 
     sudo service apache2 restart
-    
+  
+## Pull in images
+
+The images for this site are held in a separate repository that is included as a submodule.
+
+    git submodule update --init --recursive
     
 ## Search index installation
 
