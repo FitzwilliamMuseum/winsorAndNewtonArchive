@@ -11,18 +11,18 @@
     },
     "devDependencies": {
         "axios": "^0.18",
-        "bootstrap": "^4.4.1",
+        "bootstrap": "^4.5.2",
         "cross-env": "^5.2.1",
         "jquery": ">=3.5.0",
-        "laravel-mix": "^4.1.4",
+        "laravel-mix": "^5.0.4",
         "lodash": "^4.17.19",
-        "popper.js": "^1.16.0",
+        "popper.js": "^1.16.1",
         "resolve-url-loader": "^2.3.2",
-        "sass": "^1.23.7",
+        "sass": "^1.26.10",
         "sass-loader": "^7.3.1",
         "serialize-javascript": ">=3.1.0",
-        "set-value": ">=2.0.1",
-        "vue": "^2.6.10",
-        "vue-template-compiler": "^2.6.10"
+        "set-value": "^3.0.2",
+        "vue": "^2.6.11",
+        "vue-template-compiler": "^2.6.11"
     }
 }
