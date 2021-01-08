@@ -12,7 +12,8 @@
         "laravel/tinker": "^2.0",
         "laravelcollective/html": "^6.1",
         "mews/purifier": "^3.2",
-        "solarium/solarium": "^4.1"
+        "solarium/solarium": "^4.1",
+        "symfony/http-kernel": "4.4.13"
     },
     "require-dev": {
         "filp/whoops": "^2.0",
